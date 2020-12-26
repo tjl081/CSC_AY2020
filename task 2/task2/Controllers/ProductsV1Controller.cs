@@ -74,12 +74,17 @@ namespace WebAPI2.Controllers
         public HttpResponseMessage UpdateProduct(Product product, int id)
         {
             product.Id = id;
-            if (!repository.Update(product))
+            if (ModelState.IsValid)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Product updating failed!");
+                repository.Update(product);
+                return Request.CreateResponse(HttpStatusCode.OK, "Product updated successfully!");
+                
+            }
+            else
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
             }
 
-            return Request.CreateResponse(HttpStatusCode.OK, "Product updated successfully!");
         }
 
         [HttpDelete]
