@@ -24,6 +24,12 @@ namespace CSC_AY2020_Task6.Controllers
             return View(new RegistrationModel());
         }
 
+        public ActionResult PlanSelect(string customerId)
+        {
+            ViewBag.Message = customerId;
+            return View();
+        }
+
 
 
         [HttpPost]
@@ -35,10 +41,9 @@ namespace CSC_AY2020_Task6.Controllers
                 return View(model);
             }
 
-            var chargeId = await RegisterCustomer(model);
-            // You should do something with the chargeId --> Persist it maybe?
-
-            return View("PlanSelect");
+            var customer = await RegisterCustomer(model);
+            var cID = customer.Id;
+            return RedirectToAction("PlanSelect", "Home", new { customerId = cID }); ;
         }
 
 
