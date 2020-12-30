@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <img id="selectedImage" style="height:400px;width:400px;" alt="Image will be previewed after being chosen!" />
+        <div id="tags"></div>
+        <div id="receiptCheck"></div>
+        <div id="receiptAmount"></div>
+        <input type="file" name="file" id="file" value="dataFile" required="" accept=".jpg,.jpeg,.png" onchange="displayImage()">
+        <button onclick="uploadFile()">Upload to Clarifai</button>
+        <button onclick="tagImage()">Tag Image</button>
+        <button onclick="checkReceipt()">Check Image is Receipt</button>
+        <button onclick="checkAmount()">Check receipt amount</button>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+<script>
+    var app = new Clarifai.App({
+        apiKey: ''
+    });
+    function displayImage() {
+        var file = document.getElementById('file').files[0];
+        var reader = new FileReader();
+        $('#tags').html('');
+        $('#receiptCheck').html('');
+        $('#receiptAmount').html('');
+         reader.onload = function () {
+             var image = document.getElementById('selectedImage');
+             image.src = reader.result;
+        }
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+    function uploadFile() {
+        var file = document.getElementById('file').files[0];
+        var reader = new FileReader();
+        reader.onload = function () {
+            var imageDataUrl = reader.result;
+            //replace this line of text with nothing to remove it from the data url to get the base64 encoded image
+            var imageData = imageDataUrl.replace(/^data:image\/(.*);base64,/, '');
+            app.inputs.create([
+                {
+                    base64: imageData
+                }
+            ]).then(
+                function (response) {
+                    console.log(response);
+                    alert('upload successful!');
+                },
+                function (err) {
+                    console.log(err);
+                    alert('upload failed!');
+                });
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function tagImage() {
+        var file = document.getElementById('file').files[0];
+        var reader = new FileReader();
+        reader.onload = function () {
+            var imageDataUrl = reader.result;
+            //replace this line of text with nothing to remove it from the data url to get the base64 encoded image
+            var imageData = imageDataUrl.replace(/^data:image\/(.*);base64,/, '');
+            //predict using the workflow that holds the general model
+            app.workflow.predict("General", { base64: imageData })
+                .then(function (response) {
+                    //there are 3 objects in the outputs
+                    //we are only taking the first object in output since it contains the tags
+                    //the other objects contains data from other models that aren't concept-based
+                    var output = response.results[0].outputs[0];
+                    $('#tags').html('Image Tags: ');
+
+                    output.data.concepts.forEach((concept, index) => {
+                        if (output.data.concepts.length == index + 1) {
+                            $('#tags').append(concept.name);
+                        } else {
+                            $('#tags').append(concept.name + ", ");
+                        }
+                    
+
+                    })
+                    
+
+                });
+
+    
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function checkReceipt() {
+        var file = document.getElementById('file').files[0];
+        var reader = new FileReader();
+        reader.onload = function () {
+            var imageDataUrl = reader.result;
+            //replace this line of text with nothing to remove it from the data url to get the base64 encoded image
+            var imageData = imageDataUrl.replace(/^data:image\/(.*);base64,/, '');
+            app.models.predict("receipts", imageData)
+                .then(function (response) {
+                    console.log(response);
+                    var output = response.outputs[0];
+                    var concept = output.data.concepts[0];
+                    console.log(output);
+                    console.log(concept);
+                    if (concept.value >= 0.5) {
+                        $('#receiptCheck').html('Image is a receipt!');
+                    } else if (concept.value < 0.5) {
+                        $('#receiptCheck').html('Image is not a receipt!');
+                    }
+                })
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function checkAmount() {
+        var file = document.getElementById('file').files[0];
+        var reader = new FileReader();
+
+        reader.onload = function () {
+            var imageDataUrl = reader.result;
+            var imageData = imageDataUrl.replace(/^data:image\/(.*);base64,/, '');
+            console.log(file);
+            $.ajax({
+                url: '/api/v1/checkAmount',
+                method: 'POST',
+                data: {
+                    "name": file.name,
+                    "base64": imageData
+                }
+            }).done(function (data) {
+                var response = JSON.parse(data);
+                console.log(response);
+                $('#receiptAmount').html('Total of the receipt is $' + response.total);
+
+            })
+        }
+         if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+</script>
+
+
+
+
+
+
