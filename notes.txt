@@ -1,0 +1,3 @@
+start command prompt with Ruby --> ultrahook -k qpO4BPwp1m6lt3gTU2JedUu0cCcTse2I stripe https://localhost:44345 
+
+to allow webhooks to be available online

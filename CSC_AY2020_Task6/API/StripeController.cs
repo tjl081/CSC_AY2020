@@ -8,7 +8,8 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-
+using CSC_AY2020_Task6.Database;
+using Microsoft.Data.SqlClient;
 
 namespace CSC_AY2020_Task6.Controllers
 {
@@ -22,6 +23,7 @@ namespace CSC_AY2020_Task6.Controllers
         {
             
                 StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
+                
 
                 var options = new PriceListOptions
                 {
@@ -67,6 +69,12 @@ namespace CSC_AY2020_Task6.Controllers
         [Route("api/Stripe/PurchasePlan")]
         public IHttpActionResult PurchasePlan(PurchaseModel purchaseData)
         {
+            Db db = new Db();
+            if (db == null)
+            {
+                return Content(HttpStatusCode.BadRequest, "Database connection failed");
+            }
+
             StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
             string custId = purchaseData.CustomerId;
             string priceId = purchaseData.PriceId;
@@ -82,11 +90,30 @@ namespace CSC_AY2020_Task6.Controllers
 
                 },
             };
+            //card tokens are single use
             var paymentService = new PaymentMethodService();
             var paymentMethod = paymentService.Create(paymentOptions);
 
+            string cmdString = "INSERT INTO paymentmethods (paymentmethod_id,cust_stripe_id) " +
+                        "VALUES (@val1, @val2)";
+            using (SqlCommand comm = new SqlCommand(cmdString, db.conn))
+            {
 
+                comm.Parameters.AddWithValue("@val1", paymentMethod.Id);
+                comm.Parameters.AddWithValue("@val2", custId);
 
+                //try
+                //{
+                db.conn.Open();
+                comm.ExecuteNonQuery();
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine(ex.Message);
+                //    return null;
+                //}
+            }
+            db.conn.Close();
             var attachPaymentOptions = new PaymentMethodAttachOptions
             {
                 Customer = custId,
@@ -96,7 +123,6 @@ namespace CSC_AY2020_Task6.Controllers
               paymentMethod.Id,
               attachPaymentOptions
             );
-
 
 
             var subscriptionOptions = new SubscriptionCreateOptions
@@ -114,6 +140,27 @@ namespace CSC_AY2020_Task6.Controllers
             var subscriptionService = new SubscriptionService();
             var subscription = subscriptionService.Create(subscriptionOptions);
 
+            cmdString = "INSERT INTO subscriptions (subscription_id,cust_stripe_id,price_id) " +
+                        "VALUES (@val1, @val2, @val3)";
+            using (SqlCommand comm = new SqlCommand(cmdString, db.conn))
+            {
+
+                comm.Parameters.AddWithValue("@val1", subscription.Id);
+                comm.Parameters.AddWithValue("@val2", custId);
+                comm.Parameters.AddWithValue("@val3", priceId);
+
+                //try
+                //{
+                db.conn.Open();
+                comm.ExecuteNonQuery();
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine(ex.Message);
+                //    return null;
+                //}
+            }
+            db.conn.Close();
             return Ok();
         }
 
