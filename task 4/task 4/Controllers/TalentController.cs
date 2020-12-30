@@ -9,7 +9,7 @@ using task_3.Models;
 
 namespace task_3.Controllers
 {
-    public class TalentsController : ApiController
+    public class TalentController : ApiController
     {
         static readonly ITalentRepository repository = new TalentRepository();
         [EnableCors(origins: "*", headers: "*", methods: "*")]
