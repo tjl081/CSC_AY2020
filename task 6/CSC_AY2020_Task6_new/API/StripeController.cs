@@ -21,7 +21,7 @@ namespace CSC_AY2020_Task6_new.API
         public IActionResult ListPrice()
         {
 
-            StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
+            StripeConfiguration.ApiKey = "";
 
 
             var options = new PriceListOptions
@@ -74,7 +74,7 @@ namespace CSC_AY2020_Task6_new.API
                 return StatusCode(500, "Database connection failed");
             }
 
-            StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
+            StripeConfiguration.ApiKey = "";
             string custId = purchaseData.CustomerId;
             string priceId = purchaseData.PriceId;
             string token = purchaseData.CardToken;
@@ -168,7 +168,7 @@ namespace CSC_AY2020_Task6_new.API
         public IActionResult AccessPortal(string custId)
         {
 
-            StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
+            StripeConfiguration.ApiKey = "";
 
             var options = new SessionCreateOptions
             {

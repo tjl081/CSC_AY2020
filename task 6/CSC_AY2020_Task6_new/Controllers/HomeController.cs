@@ -61,7 +61,7 @@ namespace CSC_AY2020_Task6_new.Controllers
         {
             return await Task.Run(() =>
             {
-                StripeConfiguration.ApiKey = "sk_test_51I2bbHBYTNT0yLeeR90ErQBVJPbr5wYhg9NySyKsKb3HpFJ64fiTvVAsSYQpq53Vx4yk180e4uJbLMZ1F7AwhUTD00bbyfNUiO";
+                StripeConfiguration.ApiKey = "";
 
 
                 var custOptions = new CustomerCreateOptions

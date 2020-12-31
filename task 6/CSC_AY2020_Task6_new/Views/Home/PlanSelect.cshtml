@@ -45,9 +45,9 @@
                 console.log('customer ID not found');
             }
             else {
-
-                Stripe.setPublishableKey('pk_test_51I2bbHBYTNT0yLeeYssT9JQ3142VZbZhwXEUT8WpkItAX2dNYwQxX6Hao76QQuWGiQ57eL95Su8XgqtVRfd6TFLE00StsUPkvK');
-                var stripe = Stripe('pk_test_51I2bbHBYTNT0yLeeYssT9JQ3142VZbZhwXEUT8WpkItAX2dNYwQxX6Hao76QQuWGiQ57eL95Su8XgqtVRfd6TFLE00StsUPkvK');
+                var public_key = '';
+                Stripe.setPublishableKey(public_key);
+                var stripe = Stripe(public_key);
                 var elements = stripe.elements();
                 var style = {
                     base: {
