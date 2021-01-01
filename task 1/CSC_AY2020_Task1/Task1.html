@@ -45,29 +45,6 @@
                 }
             });
 
-            $.ajax({
-                type: "GET",
-                //url: "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=6894b939947d4ceebbe100707202810&q=Singaoore&format=xml&num_of_days=5",
-                url: "api/weatherapi/getWeather",
-                dataType: "json",
-                success: function (data) {
-                    var data_json = JSON.parse(data);
-                    console.log(data_json);
-                    
-                    var output_str = "";
-                    var forecast_list = data_json['items'][0]['forecasts']
-                    for (var e in forecast_list) {
-                        output_str += "AREA: " + forecast_list[e]['date'] + "<br/>FORECAST: " + forecast_list[e]['forecast'] + "<br/><br/>"
-                    }
-                    $("#out_formatted_ajax_to_csharp").html(output_str);
-
-
-                },
-                failure: function (response) {
-                    alert(response.d);
-                }
-            });
-
 
         });
     </script>
