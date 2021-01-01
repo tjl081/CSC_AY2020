@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        .loader,
+        .loader:after {
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+
+        .loader {
+            margin-left: 0.5%;
+            font-size: 2.5px;
+            position: absolute;
+            text-indent: -9999em;
+            border-top: 1em solid rgba(0,0,0, 0.2);
+            border-right: 1em solid rgba(0,0,0, 0.2);
+            border-bottom: 1em solid rgba(0,0,0, 0.2);
+            border-left: 1em solid #000000;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+            display: none;
+        }
+
+        @@-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @@keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="file" name="file" id="file" value="dataFile" required="" accept=".jpg,.jpeg,.png">
+        <div id="longUrl">long url:</div>
+        <div id="shortUrl">shorten url:</div>
+        <button onclick="uploadFile()">Upload to S3</button>
+        <button onclick="listObjs()">
+            S3 - List Objects
+        </button>
+        <span class="loader"></span>
+        <div id="objKeys"></div>
+        <div id="objImgs"></div>
+
+
+    </div>
+
+</body>
+</html>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    //access key, secret access key and session token are kept empty.
+    //acquire them from your aws educate session before running the program.
+    AWS.config.update({
+        accessKeyId: '',
+        secretAccessKey: '',
+        sessionToken: ''
+    });
+    AWS.config.region = 'us-east-1';
+    var s3BucketName = 'talentphotosbucket';
+    var longUrl = '';
+    var shortUrl = '';
+    var bitlyToken = ''
+
+    function uploadFile() {
+        var s3 = new AWS.S3({
+            params: { Bucket: s3BucketName }
+        });
+        var file = document.getElementById('file').files[0];
+        if (file) {
+            showSpinner();
+            s3.putObject({
+                Key: file.name,
+                ContentType: file.type,
+                Body: file,
+                ACL: "public-read"
+            },
+                function (err, data) {
+                    if (data !== null) {
+                        console.log(data);
+                        console.log(this);
+                        longUrl = this.request.httpRequest.stream.responseURL;
+                        $('#longUrl').html("long url:<a href='" + longUrl + "'>" + longUrl + "</a>");
+                        $.ajax({
+                            url: "https://api-ssl.bitly.com/v4/shorten",
+                            cache: false,
+                            dataType: "json",
+                            method: "POST",
+                            contentType: "application/json",
+                            beforeSend: function (xhr) {
+                                xhr.setRequestHeader("Authorization", "Bearer " + bitlyToken);
+                            },
+                            data: JSON.stringify({ "long_url": longUrl })
+                        }).done(function (data) {
+                            console.log(data);
+                            shortUrl = data.link;
+                            $('#shortUrl').html("shorten url:<a href='" + shortUrl + "'>" + shortUrl + "</a>");
+
+                        })
+                        hideSpinner();
+
+                    }
+                    else {
+                        hideSpinner();
+                        alert("Upload failed!");
+
+
+                    }
+                });
+        } else {
+            alert("No Image uploaded!");
+        }
+    }
+
+    function listObjs() {
+        showSpinner();
+        var s3 = new AWS.S3({
+            params: { Bucket: s3BucketName }
+        });
+        s3.listObjects(function (error, data) {
+            if (error === null) {
+                var html_keys = 'Object Keys:<br />';
+                var html_imgs = '';
+                jQuery.each(data.Contents, function (index, obj) {
+                    html_keys += (index + ': ' + obj.Key + '<br />');
+
+                    html_imgs += "<img src='" + "https://s3.amazonaws.com/"
+                        + s3BucketName + "/" + obj.Key + "'/><br/>";
+
+                });
+                jQuery("#objKeys").html(html_keys);
+                jQuery("#objImgs").html(html_imgs);
+                hideSpinner();
+            } else { console.log(error); hideSpinner(); }
+        });
+    }
+    function hideSpinner() {
+        $('.loader').hide();
+    }
+    function showSpinner() {
+        $('.loader').show();
+    }
+
+</script>
