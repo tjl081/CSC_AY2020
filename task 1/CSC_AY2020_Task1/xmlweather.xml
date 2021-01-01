@@ -2,29 +2,29 @@
 <data>
   <request>
     <type>City</type>
-    <query>London, United Kingdom</query>
+    <query>London</query>
   </request>
   <current_condition>
-    <observation_time>05:55 AM</observation_time>
-    <temp_C>2</temp_C>
-    <temp_F>36</temp_F>
+    <observation_time>10:26 AM</observation_time>
+    <temp_C>1</temp_C>
+    <temp_F>34</temp_F>
     <weatherCode>116</weatherCode>
-    <weatherIconUrl><![CDATA[http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png]]></weatherIconUrl>
+    <weatherIconUrl><![CDATA[http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png]]></weatherIconUrl>
     <weatherDesc><![CDATA[Partly cloudy]]></weatherDesc>
-    <windspeedMiles>7</windspeedMiles>
-    <windspeedKmph>11</windspeedKmph>
-    <winddirDegree>300</winddirDegree>
-    <winddir16Point>WNW</winddir16Point>
+    <windspeedMiles>8</windspeedMiles>
+    <windspeedKmph>13</windspeedKmph>
+    <winddirDegree>250</winddirDegree>
+    <winddir16Point>WSW</winddir16Point>
     <precipMM>0.0</precipMM>
     <precipInches>0.0</precipInches>
-    <humidity>87</humidity>
-    <visibility>6</visibility>
-    <visibilityMiles>3</visibilityMiles>
-    <pressure>1009</pressure>
+    <humidity>86</humidity>
+    <visibility>7</visibility>
+    <visibilityMiles>4</visibilityMiles>
+    <pressure>1011</pressure>
     <pressureInches>30</pressureInches>
     <cloudcover>75</cloudcover>
-    <FeelsLikeC>1</FeelsLikeC>
-    <FeelsLikeF>33</FeelsLikeF>
+    <FeelsLikeC>-1</FeelsLikeC>
+    <FeelsLikeF>31</FeelsLikeF>
     <uvIndex>1</uvIndex>
   </current_condition>
   <weather>
@@ -1771,163 +1771,163 @@
     <month>
       <index>1</index>
       <name>January</name>
-      <avgMinTemp>2.1</avgMinTemp>
-      <avgMinTemp_F>35.8</avgMinTemp_F>
-      <avgMaxTemp>6.7</avgMaxTemp>
-      <avgMaxTemp_F>44.0</avgMaxTemp_F>
-      <absMinTemp>-0.7</absMinTemp>
-      <absMinTemp_F>30.7</absMinTemp_F>
-      <absMaxTemp>9.2</absMaxTemp>
-      <absMaxTemp_F>48.5</absMaxTemp_F>
-      <avgTemp>4.4</avgTemp>
-      <avgTemp_F>39.9</avgTemp_F>
-      <maxWindSpeed_kmph>17.5</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>10.9</maxWindSpeed_mph>
-      <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>4.9</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>16.5</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>10.3</avgWindSpeed_mph>
-      <avgWindSpeed_knots>8.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.6</avgWindSpeed_ms>
-      <avgWindGust_kmph>27.4</avgWindGust_kmph>
-      <avgWindGust_mph>17.0</avgWindGust_mph>
-      <avgWindGust_knots>14.0</avgWindGust_knots>
-      <avgWindGust_ms>7.6</avgWindGust_ms>
-      <avgDailyRainfall>0.70</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>21.63</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.85</avgMonthlyRainfall_inch>
-      <avgHumidity>87.131256</avgHumidity>
-      <avgCloud>58.693073</avgCloud>
+      <avgMinTemp>2.4</avgMinTemp>
+      <avgMinTemp_F>36.3</avgMinTemp_F>
+      <avgMaxTemp>6.9</avgMaxTemp>
+      <avgMaxTemp_F>44.4</avgMaxTemp_F>
+      <absMinTemp>0.3</absMinTemp>
+      <absMinTemp_F>32.5</absMinTemp_F>
+      <absMaxTemp>8.7</absMaxTemp>
+      <absMaxTemp_F>47.6</absMaxTemp_F>
+      <avgTemp>4.7</avgTemp>
+      <avgTemp_F>40.4</avgTemp_F>
+      <maxWindSpeed_kmph>18.7</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>11.6</maxWindSpeed_mph>
+      <maxWindSpeed_knots>10.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>5.2</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>17.4</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>10.8</avgWindSpeed_mph>
+      <avgWindSpeed_knots>9.0</avgWindSpeed_knots>
+      <avgWindSpeed_ms>4.8</avgWindSpeed_ms>
+      <avgWindGust_kmph>28.2</avgWindGust_kmph>
+      <avgWindGust_mph>17.5</avgWindGust_mph>
+      <avgWindGust_knots>15.0</avgWindGust_knots>
+      <avgWindGust_ms>7.8</avgWindGust_ms>
+      <avgDailyRainfall>1.12</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>34.83</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.37</avgMonthlyRainfall_inch>
+      <avgHumidity>88.27114</avgHumidity>
+      <avgCloud>59.616695</avgCloud>
       <avgVis_km>8.6</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1014.6</avgPressure_mb>
+      <avgPressure_mb>1014.9</avgPressure_mb>
       <avgPressure_inch>30.4</avgPressure_inch>
-      <avgDryDays>16</avgDryDays>
-      <avgRainDays>12</avgRainDays>
-      <avgSnowDays>2</avgSnowDays>
-      <avgFogDays>6</avgFogDays>
+      <avgDryDays>12</avgDryDays>
+      <avgRainDays>15</avgRainDays>
+      <avgSnowDays>3</avgSnowDays>
+      <avgFogDays>5</avgFogDays>
       <avgThunderDays>2</avgThunderDays>
       <avgUVIndex>2</avgUVIndex>
-      <avgSunHour>126.4</avgSunHour>
+      <avgSunHour>122.2</avgSunHour>
     </month>
     <month>
       <index>2</index>
       <name>February</name>
       <avgMinTemp>2.6</avgMinTemp>
-      <avgMinTemp_F>36.6</avgMinTemp_F>
-      <avgMaxTemp>7.5</avgMaxTemp>
-      <avgMaxTemp_F>45.6</avgMaxTemp_F>
-      <absMinTemp>0.0</absMinTemp>
-      <absMinTemp_F>32.0</absMinTemp_F>
-      <absMaxTemp>11.3</absMaxTemp>
-      <absMaxTemp_F>52.4</absMaxTemp_F>
+      <avgMinTemp_F>36.7</avgMinTemp_F>
+      <avgMaxTemp>7.4</avgMaxTemp>
+      <avgMaxTemp_F>45.4</avgMaxTemp_F>
+      <absMinTemp>0.6</absMinTemp>
+      <absMinTemp_F>33.0</absMinTemp_F>
+      <absMaxTemp>10.5</absMaxTemp>
+      <absMaxTemp_F>50.9</absMaxTemp_F>
       <avgTemp>5.0</avgTemp>
-      <avgTemp_F>40.9</avgTemp_F>
-      <maxWindSpeed_kmph>18.4</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>11.4</maxWindSpeed_mph>
-      <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>5.1</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>17.4</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>10.8</avgWindSpeed_mph>
+      <avgTemp_F>41.1</avgTemp_F>
+      <maxWindSpeed_kmph>19.6</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>12.2</maxWindSpeed_mph>
+      <maxWindSpeed_knots>10.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>5.4</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>18.2</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>11.3</avgWindSpeed_mph>
       <avgWindSpeed_knots>9.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.8</avgWindSpeed_ms>
-      <avgWindGust_kmph>27.8</avgWindGust_kmph>
-      <avgWindGust_mph>17.2</avgWindGust_mph>
-      <avgWindGust_knots>14.0</avgWindGust_knots>
-      <avgWindGust_ms>7.7</avgWindGust_ms>
-      <avgDailyRainfall>0.96</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>26.85</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>1.06</avgMonthlyRainfall_inch>
-      <avgHumidity>83.85635</avgHumidity>
-      <avgCloud>62.0268</avgCloud>
+      <avgWindSpeed_ms>5.0</avgWindSpeed_ms>
+      <avgWindGust_kmph>28.6</avgWindGust_kmph>
+      <avgWindGust_mph>17.8</avgWindGust_mph>
+      <avgWindGust_knots>15.0</avgWindGust_knots>
+      <avgWindGust_ms>7.9</avgWindGust_ms>
+      <avgDailyRainfall>1.26</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.05</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>35.30</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.39</avgMonthlyRainfall_inch>
+      <avgHumidity>86.0394</avgHumidity>
+      <avgCloud>62.11647</avgCloud>
       <avgVis_km>8.9</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1013.9</avgPressure_mb>
+      <avgPressure_mb>1014.2</avgPressure_mb>
       <avgPressure_inch>30.4</avgPressure_inch>
-      <avgDryDays>13</avgDryDays>
-      <avgRainDays>10</avgRainDays>
+      <avgDryDays>12</avgDryDays>
+      <avgRainDays>12</avgRainDays>
       <avgSnowDays>4</avgSnowDays>
-      <avgFogDays>6</avgFogDays>
+      <avgFogDays>5</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>2</avgUVIndex>
-      <avgSunHour>99.9</avgSunHour>
+      <avgSunHour>100.3</avgSunHour>
     </month>
     <month>
       <index>3</index>
       <name>March</name>
       <avgMinTemp>3.6</avgMinTemp>
-      <avgMinTemp_F>38.5</avgMinTemp_F>
-      <avgMaxTemp>10.5</avgMaxTemp>
-      <avgMaxTemp_F>50.9</avgMaxTemp_F>
-      <absMinTemp>-0.3</absMinTemp>
-      <absMinTemp_F>31.5</absMinTemp_F>
-      <absMaxTemp>12.8</absMaxTemp>
-      <absMaxTemp_F>55.1</absMaxTemp_F>
-      <avgTemp>6.9</avgTemp>
-      <avgTemp_F>44.4</avgTemp_F>
-      <maxWindSpeed_kmph>16.8</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>10.4</maxWindSpeed_mph>
+      <avgMinTemp_F>38.4</avgMinTemp_F>
+      <avgMaxTemp>10.1</avgMaxTemp>
+      <avgMaxTemp_F>50.3</avgMaxTemp_F>
+      <absMinTemp>0.4</absMinTemp>
+      <absMinTemp_F>32.7</absMinTemp_F>
+      <absMaxTemp>12.7</absMaxTemp>
+      <absMaxTemp_F>54.8</absMaxTemp_F>
+      <avgTemp>6.7</avgTemp>
+      <avgTemp_F>44.1</avgTemp_F>
+      <maxWindSpeed_kmph>17.8</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>11.1</maxWindSpeed_mph>
       <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>4.7</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>15.9</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>9.9</avgWindSpeed_mph>
+      <maxWindSpeed_ms>4.9</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>16.6</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>10.3</avgWindSpeed_mph>
       <avgWindSpeed_knots>8.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.4</avgWindSpeed_ms>
-      <avgWindGust_kmph>24.6</avgWindGust_kmph>
-      <avgWindGust_mph>15.3</avgWindGust_mph>
+      <avgWindSpeed_ms>4.6</avgWindSpeed_ms>
+      <avgWindGust_kmph>25.5</avgWindGust_kmph>
+      <avgWindGust_mph>15.8</avgWindGust_mph>
       <avgWindGust_knots>13.0</avgWindGust_knots>
-      <avgWindGust_ms>6.8</avgWindGust_ms>
-      <avgDailyRainfall>0.59</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.02</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>18.31</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.72</avgMonthlyRainfall_inch>
-      <avgHumidity>80.29701</avgHumidity>
-      <avgCloud>55.956303</avgCloud>
-      <avgVis_km>8.9</avgVis_km>
+      <avgWindGust_ms>7.1</avgWindGust_ms>
+      <avgDailyRainfall>0.81</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>25.25</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>0.99</avgMonthlyRainfall_inch>
+      <avgHumidity>83.29687</avgHumidity>
+      <avgCloud>55.310585</avgCloud>
+      <avgVis_km>8.8</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1015.5</avgPressure_mb>
+      <avgPressure_mb>1015.7</avgPressure_mb>
       <avgPressure_inch>30.5</avgPressure_inch>
-      <avgDryDays>16</avgDryDays>
-      <avgRainDays>12</avgRainDays>
+      <avgDryDays>15</avgDryDays>
+      <avgRainDays>13</avgRainDays>
       <avgSnowDays>1</avgSnowDays>
       <avgFogDays>6</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>2</avgUVIndex>
-      <avgSunHour>168.0</avgSunHour>
+      <avgSunHour>173.5</avgSunHour>
     </month>
     <month>
       <index>4</index>
       <name>April</name>
-      <avgMinTemp>5.5</avgMinTemp>
-      <avgMinTemp_F>41.9</avgMinTemp_F>
-      <avgMaxTemp>14.1</avgMaxTemp>
-      <avgMaxTemp_F>57.4</avgMaxTemp_F>
-      <absMinTemp>2.7</absMinTemp>
-      <absMinTemp_F>36.9</absMinTemp_F>
-      <absMaxTemp>17.8</absMaxTemp>
-      <absMaxTemp_F>64.1</absMaxTemp_F>
-      <avgTemp>9.8</avgTemp>
-      <avgTemp_F>49.6</avgTemp_F>
-      <maxWindSpeed_kmph>14.1</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.8</maxWindSpeed_mph>
+      <avgMinTemp>5.3</avgMinTemp>
+      <avgMinTemp_F>41.6</avgMinTemp_F>
+      <avgMaxTemp>13.5</avgMaxTemp>
+      <avgMaxTemp_F>56.4</avgMaxTemp_F>
+      <absMinTemp>3.2</absMinTemp>
+      <absMinTemp_F>37.8</absMinTemp_F>
+      <absMaxTemp>17.6</absMaxTemp>
+      <absMaxTemp_F>63.7</absMaxTemp_F>
+      <avgTemp>9.5</avgTemp>
+      <avgTemp_F>49.1</avgTemp_F>
+      <maxWindSpeed_kmph>14.6</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>9.1</maxWindSpeed_mph>
       <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>3.9</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>13.4</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>8.3</avgWindSpeed_mph>
+      <maxWindSpeed_ms>4.1</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.7</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.5</avgWindSpeed_mph>
       <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.7</avgWindSpeed_ms>
-      <avgWindGust_kmph>20.0</avgWindGust_kmph>
-      <avgWindGust_mph>12.4</avgWindGust_mph>
-      <avgWindGust_knots>10.0</avgWindGust_knots>
-      <avgWindGust_ms>5.6</avgWindGust_ms>
-      <avgDailyRainfall>0.56</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.02</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>16.84</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.66</avgMonthlyRainfall_inch>
-      <avgHumidity>76.89197</avgHumidity>
-      <avgCloud>49.748306</avgCloud>
+      <avgWindSpeed_ms>3.8</avgWindSpeed_ms>
+      <avgWindGust_kmph>20.5</avgWindGust_kmph>
+      <avgWindGust_mph>12.7</avgWindGust_mph>
+      <avgWindGust_knots>11.0</avgWindGust_knots>
+      <avgWindGust_ms>5.7</avgWindGust_ms>
+      <avgDailyRainfall>0.65</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>19.52</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>0.77</avgMonthlyRainfall_inch>
+      <avgHumidity>80.33566</avgHumidity>
+      <avgCloud>48.100876</avgCloud>
       <avgVis_km>9.0</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
       <avgPressure_mb>1015.7</avgPressure_mb>
@@ -1935,354 +1935,354 @@
       <avgDryDays>15</avgDryDays>
       <avgRainDays>13</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>7</avgFogDays>
+      <avgFogDays>6</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>3</avgUVIndex>
-      <avgSunHour>227.4</avgSunHour>
+      <avgSunHour>235.4</avgSunHour>
     </month>
     <month>
       <index>5</index>
       <name>May</name>
-      <avgMinTemp>8.1</avgMinTemp>
-      <avgMinTemp_F>46.6</avgMinTemp_F>
-      <avgMaxTemp>16.7</avgMaxTemp>
-      <avgMaxTemp_F>62.1</avgMaxTemp_F>
-      <absMinTemp>5.3</absMinTemp>
-      <absMinTemp_F>41.5</absMinTemp_F>
-      <absMaxTemp>20.3</absMaxTemp>
-      <absMaxTemp_F>68.5</absMaxTemp_F>
-      <avgTemp>12.7</avgTemp>
-      <avgTemp_F>54.9</avgTemp_F>
-      <maxWindSpeed_kmph>14.2</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.8</maxWindSpeed_mph>
+      <avgMinTemp>7.7</avgMinTemp>
+      <avgMinTemp_F>45.8</avgMinTemp_F>
+      <avgMaxTemp>16.0</avgMaxTemp>
+      <avgMaxTemp_F>60.9</avgMaxTemp_F>
+      <absMinTemp>5.7</absMinTemp>
+      <absMinTemp_F>42.2</absMinTemp_F>
+      <absMaxTemp>18.6</absMaxTemp>
+      <absMaxTemp_F>65.5</absMaxTemp_F>
+      <avgTemp>12.3</avgTemp>
+      <avgTemp_F>54.1</avgTemp_F>
+      <maxWindSpeed_kmph>14.7</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>9.1</maxWindSpeed_mph>
       <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>4.0</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>13.5</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>8.4</avgWindSpeed_mph>
+      <maxWindSpeed_ms>4.1</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.7</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.5</avgWindSpeed_mph>
       <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.7</avgWindSpeed_ms>
-      <avgWindGust_kmph>19.7</avgWindGust_kmph>
-      <avgWindGust_mph>12.2</avgWindGust_mph>
+      <avgWindSpeed_ms>3.8</avgWindSpeed_ms>
+      <avgWindGust_kmph>20.0</avgWindGust_kmph>
+      <avgWindGust_mph>12.4</avgWindGust_mph>
       <avgWindGust_knots>10.0</avgWindGust_knots>
-      <avgWindGust_ms>5.5</avgWindGust_ms>
-      <avgDailyRainfall>0.66</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>20.49</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.81</avgMonthlyRainfall_inch>
-      <avgHumidity>75.56271</avgHumidity>
-      <avgCloud>51.38774</avgCloud>
-      <avgVis_km>9.2</avgVis_km>
+      <avgWindGust_ms>5.6</avgWindGust_ms>
+      <avgDailyRainfall>0.97</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>30.14</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.19</avgMonthlyRainfall_inch>
+      <avgHumidity>79.94058</avgHumidity>
+      <avgCloud>49.807827</avgCloud>
+      <avgVis_km>9.1</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1016.8</avgPressure_mb>
+      <avgPressure_mb>1016.9</avgPressure_mb>
       <avgPressure_inch>30.5</avgPressure_inch>
-      <avgDryDays>14</avgDryDays>
-      <avgRainDays>13</avgRainDays>
+      <avgDryDays>15</avgDryDays>
+      <avgRainDays>14</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>7</avgFogDays>
+      <avgFogDays>6</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>4</avgUVIndex>
-      <avgSunHour>229.2</avgSunHour>
+      <avgSunHour>236.0</avgSunHour>
     </month>
     <month>
       <index>6</index>
       <name>June</name>
-      <avgMinTemp>10.9</avgMinTemp>
-      <avgMinTemp_F>51.5</avgMinTemp_F>
-      <avgMaxTemp>19.7</avgMaxTemp>
-      <avgMaxTemp_F>67.4</avgMaxTemp_F>
-      <absMinTemp>9.0</absMinTemp>
-      <absMinTemp_F>48.2</absMinTemp_F>
-      <absMaxTemp>22.5</absMaxTemp>
-      <absMaxTemp_F>72.5</absMaxTemp_F>
-      <avgTemp>15.6</avgTemp>
-      <avgTemp_F>60.1</avgTemp_F>
-      <maxWindSpeed_kmph>13.8</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.6</maxWindSpeed_mph>
+      <avgMinTemp>10.4</avgMinTemp>
+      <avgMinTemp_F>50.7</avgMinTemp_F>
+      <avgMaxTemp>19.0</avgMaxTemp>
+      <avgMaxTemp_F>66.2</avgMaxTemp_F>
+      <absMinTemp>9.2</absMinTemp>
+      <absMinTemp_F>48.5</absMinTemp_F>
+      <absMaxTemp>20.7</absMaxTemp>
+      <absMaxTemp_F>69.3</absMaxTemp_F>
+      <avgTemp>15.1</avgTemp>
+      <avgTemp_F>59.2</avgTemp_F>
+      <maxWindSpeed_kmph>14.6</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>9.1</maxWindSpeed_mph>
       <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>3.8</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>13.0</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>8.1</avgWindSpeed_mph>
+      <maxWindSpeed_ms>4.1</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.5</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.4</avgWindSpeed_mph>
       <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.6</avgWindSpeed_ms>
-      <avgWindGust_kmph>18.7</avgWindGust_kmph>
-      <avgWindGust_mph>11.6</avgWindGust_mph>
+      <avgWindSpeed_ms>3.8</avgWindSpeed_ms>
+      <avgWindGust_kmph>19.5</avgWindGust_kmph>
+      <avgWindGust_mph>12.1</avgWindGust_mph>
       <avgWindGust_knots>10.0</avgWindGust_knots>
-      <avgWindGust_ms>5.2</avgWindGust_ms>
-      <avgDailyRainfall>1.06</avgDailyRainfall>
+      <avgWindGust_ms>5.4</avgWindGust_ms>
+      <avgDailyRainfall>1.00</avgDailyRainfall>
       <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>31.89</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>1.26</avgMonthlyRainfall_inch>
-      <avgHumidity>76.539734</avgHumidity>
-      <avgCloud>53.570164</avgCloud>
+      <avgMonthlyRainfall>29.95</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.18</avgMonthlyRainfall_inch>
+      <avgHumidity>80.262054</avgHumidity>
+      <avgCloud>50.64805</avgCloud>
       <avgVis_km>9.1</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1016.2</avgPressure_mb>
+      <avgPressure_mb>1016.4</avgPressure_mb>
       <avgPressure_inch>30.5</avgPressure_inch>
-      <avgDryDays>13</avgDryDays>
-      <avgRainDays>13</avgRainDays>
+      <avgDryDays>14</avgDryDays>
+      <avgRainDays>14</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>8</avgFogDays>
-      <avgThunderDays>1</avgThunderDays>
+      <avgFogDays>7</avgFogDays>
+      <avgThunderDays>2</avgThunderDays>
       <avgUVIndex>5</avgUVIndex>
-      <avgSunHour>216.6</avgSunHour>
+      <avgSunHour>229.5</avgSunHour>
     </month>
     <month>
       <index>7</index>
       <name>July</name>
-      <avgMinTemp>13.6</avgMinTemp>
-      <avgMinTemp_F>56.4</avgMinTemp_F>
-      <avgMaxTemp>22.3</avgMaxTemp>
-      <avgMaxTemp_F>72.1</avgMaxTemp_F>
-      <absMinTemp>10.5</absMinTemp>
-      <absMinTemp_F>50.9</absMinTemp_F>
-      <absMaxTemp>26.7</absMaxTemp>
-      <absMaxTemp_F>80.0</absMaxTemp_F>
-      <avgTemp>18.0</avgTemp>
-      <avgTemp_F>64.4</avgTemp_F>
-      <maxWindSpeed_kmph>13.5</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.4</maxWindSpeed_mph>
+      <avgMinTemp>12.9</avgMinTemp>
+      <avgMinTemp_F>55.3</avgMinTemp_F>
+      <avgMaxTemp>21.4</avgMaxTemp>
+      <avgMaxTemp_F>70.6</avgMaxTemp_F>
+      <absMinTemp>10.7</absMinTemp>
+      <absMinTemp_F>51.2</absMinTemp_F>
+      <absMaxTemp>24.7</absMaxTemp>
+      <absMaxTemp_F>76.5</absMaxTemp_F>
+      <avgTemp>17.4</avgTemp>
+      <avgTemp_F>63.4</avgTemp_F>
+      <maxWindSpeed_kmph>14.4</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>8.9</maxWindSpeed_mph>
       <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>3.7</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>12.8</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>7.9</avgWindSpeed_mph>
-      <avgWindSpeed_knots>6.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.5</avgWindSpeed_ms>
-      <avgWindGust_kmph>18.2</avgWindGust_kmph>
-      <avgWindGust_mph>11.3</avgWindGust_mph>
-      <avgWindGust_knots>9.0</avgWindGust_knots>
-      <avgWindGust_ms>5.1</avgWindGust_ms>
-      <avgDailyRainfall>0.87</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>27.12</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>1.07</avgMonthlyRainfall_inch>
-      <avgHumidity>72.6662</avgHumidity>
-      <avgCloud>50.777245</avgCloud>
-      <avgVis_km>8.9</avgVis_km>
+      <maxWindSpeed_ms>4.0</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.4</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.3</avgWindSpeed_mph>
+      <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
+      <avgWindSpeed_ms>3.7</avgWindSpeed_ms>
+      <avgWindGust_kmph>19.2</avgWindGust_kmph>
+      <avgWindGust_mph>11.9</avgWindGust_mph>
+      <avgWindGust_knots>10.0</avgWindGust_knots>
+      <avgWindGust_ms>5.3</avgWindGust_ms>
+      <avgDailyRainfall>0.94</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>29.10</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.15</avgMonthlyRainfall_inch>
+      <avgHumidity>76.98851</avgHumidity>
+      <avgCloud>47.66919</avgCloud>
+      <avgVis_km>9.0</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1015.4</avgPressure_mb>
+      <avgPressure_mb>1015.6</avgPressure_mb>
       <avgPressure_inch>30.5</avgPressure_inch>
-      <avgDryDays>12</avgDryDays>
+      <avgDryDays>14</avgDryDays>
       <avgRainDays>16</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>7</avgFogDays>
+      <avgFogDays>6</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>5</avgUVIndex>
-      <avgSunHour>238.2</avgSunHour>
+      <avgSunHour>257.6</avgSunHour>
     </month>
     <month>
       <index>8</index>
       <name>August</name>
-      <avgMinTemp>13.9</avgMinTemp>
-      <avgMinTemp_F>57.0</avgMinTemp_F>
-      <avgMaxTemp>21.9</avgMaxTemp>
-      <avgMaxTemp_F>71.4</avgMaxTemp_F>
-      <absMinTemp>11.3</absMinTemp>
-      <absMinTemp_F>52.3</absMinTemp_F>
-      <absMaxTemp>24.3</absMaxTemp>
-      <absMaxTemp_F>75.8</absMaxTemp_F>
-      <avgTemp>17.9</avgTemp>
-      <avgTemp_F>64.2</avgTemp_F>
-      <maxWindSpeed_kmph>14.0</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.7</maxWindSpeed_mph>
-      <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>3.9</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>12.8</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>8.0</avgWindSpeed_mph>
-      <avgWindSpeed_knots>6.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.6</avgWindSpeed_ms>
-      <avgWindGust_kmph>18.4</avgWindGust_kmph>
-      <avgWindGust_mph>11.4</avgWindGust_mph>
-      <avgWindGust_knots>9.0</avgWindGust_knots>
-      <avgWindGust_ms>5.1</avgWindGust_ms>
-      <avgDailyRainfall>1.05</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>32.53</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>1.28</avgMonthlyRainfall_inch>
-      <avgHumidity>72.217865</avgHumidity>
-      <avgCloud>49.3924</avgCloud>
-      <avgVis_km>9.0</avgVis_km>
+      <avgMinTemp>13.3</avgMinTemp>
+      <avgMinTemp_F>55.9</avgMinTemp_F>
+      <avgMaxTemp>21.1</avgMaxTemp>
+      <avgMaxTemp_F>70.0</avgMaxTemp_F>
+      <absMinTemp>11.7</absMinTemp>
+      <absMinTemp_F>53.1</absMinTemp_F>
+      <absMaxTemp>23.1</absMaxTemp>
+      <absMaxTemp_F>73.5</absMaxTemp_F>
+      <avgTemp>17.3</avgTemp>
+      <avgTemp_F>63.2</avgTemp_F>
+      <maxWindSpeed_kmph>15.0</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>9.3</maxWindSpeed_mph>
+      <maxWindSpeed_knots>8.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>4.2</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.3</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.3</avgWindSpeed_mph>
+      <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
+      <avgWindSpeed_ms>3.7</avgWindSpeed_ms>
+      <avgWindGust_kmph>19.2</avgWindGust_kmph>
+      <avgWindGust_mph>11.9</avgWindGust_mph>
+      <avgWindGust_knots>10.0</avgWindGust_knots>
+      <avgWindGust_ms>5.3</avgWindGust_ms>
+      <avgDailyRainfall>1.23</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.05</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>38.16</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.50</avgMonthlyRainfall_inch>
+      <avgHumidity>77.005066</avgHumidity>
+      <avgCloud>46.644646</avgCloud>
+      <avgVis_km>8.8</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1014.9</avgPressure_mb>
-      <avgPressure_inch>30.4</avgPressure_inch>
-      <avgDryDays>15</avgDryDays>
-      <avgRainDays>13</avgRainDays>
+      <avgPressure_mb>1015.2</avgPressure_mb>
+      <avgPressure_inch>30.5</avgPressure_inch>
+      <avgDryDays>14</avgDryDays>
+      <avgRainDays>14</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
       <avgFogDays>7</avgFogDays>
-      <avgThunderDays>1</avgThunderDays>
+      <avgThunderDays>2</avgThunderDays>
       <avgUVIndex>4</avgUVIndex>
-      <avgSunHour>245.6</avgSunHour>
+      <avgSunHour>257.0</avgSunHour>
     </month>
     <month>
       <index>9</index>
       <name>September</name>
-      <avgMinTemp>11.6</avgMinTemp>
-      <avgMinTemp_F>53.0</avgMinTemp_F>
-      <avgMaxTemp>19.2</avgMaxTemp>
-      <avgMaxTemp_F>66.5</avgMaxTemp_F>
-      <absMinTemp>9.1</absMinTemp>
-      <absMinTemp_F>48.3</absMinTemp_F>
-      <absMaxTemp>20.9</absMaxTemp>
-      <absMaxTemp_F>69.6</absMaxTemp_F>
-      <avgTemp>15.2</avgTemp>
-      <avgTemp_F>59.4</avgTemp_F>
-      <maxWindSpeed_kmph>13.9</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>8.7</maxWindSpeed_mph>
-      <maxWindSpeed_knots>7.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>3.9</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>12.8</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>8.0</avgWindSpeed_mph>
-      <avgWindSpeed_knots>6.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>3.6</avgWindSpeed_ms>
-      <avgWindGust_kmph>19.0</avgWindGust_kmph>
-      <avgWindGust_mph>11.8</avgWindGust_mph>
+      <avgMinTemp>11.3</avgMinTemp>
+      <avgMinTemp_F>52.4</avgMinTemp_F>
+      <avgMaxTemp>18.7</avgMaxTemp>
+      <avgMaxTemp_F>65.6</avgMaxTemp_F>
+      <absMinTemp>9.7</absMinTemp>
+      <absMinTemp_F>49.5</absMinTemp_F>
+      <absMaxTemp>20.6</absMaxTemp>
+      <absMaxTemp_F>69.1</absMaxTemp_F>
+      <avgTemp>14.9</avgTemp>
+      <avgTemp_F>58.9</avgTemp_F>
+      <maxWindSpeed_kmph>15.2</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>9.4</maxWindSpeed_mph>
+      <maxWindSpeed_knots>8.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>4.2</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>13.6</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>8.5</avgWindSpeed_mph>
+      <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
+      <avgWindSpeed_ms>3.8</avgWindSpeed_ms>
+      <avgWindGust_kmph>20.3</avgWindGust_kmph>
+      <avgWindGust_mph>12.6</avgWindGust_mph>
       <avgWindGust_knots>10.0</avgWindGust_knots>
-      <avgWindGust_ms>5.3</avgWindGust_ms>
-      <avgDailyRainfall>0.59</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.02</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>17.64</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.69</avgMonthlyRainfall_inch>
-      <avgHumidity>75.19122</avgHumidity>
-      <avgCloud>48.62276</avgCloud>
-      <avgVis_km>8.6</avgVis_km>
+      <avgWindGust_ms>5.6</avgWindGust_ms>
+      <avgDailyRainfall>0.77</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>23.13</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>0.91</avgMonthlyRainfall_inch>
+      <avgHumidity>79.01274</avgHumidity>
+      <avgCloud>46.60242</avgCloud>
+      <avgVis_km>8.7</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1016.9</avgPressure_mb>
+      <avgPressure_mb>1017.1</avgPressure_mb>
       <avgPressure_inch>30.5</avgPressure_inch>
-      <avgDryDays>18</avgDryDays>
-      <avgRainDays>10</avgRainDays>
+      <avgDryDays>16</avgDryDays>
+      <avgRainDays>11</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>9</avgFogDays>
-      <avgThunderDays>0</avgThunderDays>
+      <avgFogDays>7</avgFogDays>
+      <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>4</avgUVIndex>
-      <avgSunHour>210.1</avgSunHour>
+      <avgSunHour>221.5</avgSunHour>
     </month>
     <month>
       <index>10</index>
       <name>October</name>
-      <avgMinTemp>9.2</avgMinTemp>
-      <avgMinTemp_F>48.5</avgMinTemp_F>
-      <avgMaxTemp>15.0</avgMaxTemp>
-      <avgMaxTemp_F>58.9</avgMaxTemp_F>
-      <absMinTemp>6.9</absMinTemp>
-      <absMinTemp_F>44.5</absMinTemp_F>
-      <absMaxTemp>16.2</absMaxTemp>
-      <absMaxTemp_F>61.2</absMaxTemp_F>
-      <avgTemp>12.0</avgTemp>
-      <avgTemp_F>53.5</avgTemp_F>
-      <maxWindSpeed_kmph>16.0</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>10.0</maxWindSpeed_mph>
-      <maxWindSpeed_knots>8.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>4.4</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>14.6</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>9.0</avgWindSpeed_mph>
-      <avgWindSpeed_knots>7.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.0</avgWindSpeed_ms>
-      <avgWindGust_kmph>22.5</avgWindGust_kmph>
-      <avgWindGust_mph>14.0</avgWindGust_mph>
+      <avgMinTemp>9.0</avgMinTemp>
+      <avgMinTemp_F>48.2</avgMinTemp_F>
+      <avgMaxTemp>14.8</avgMaxTemp>
+      <avgMaxTemp_F>58.6</avgMaxTemp_F>
+      <absMinTemp>7.6</absMinTemp>
+      <absMinTemp_F>45.6</absMinTemp_F>
+      <absMaxTemp>16.1</absMaxTemp>
+      <absMaxTemp_F>61.0</absMaxTemp_F>
+      <avgTemp>11.9</avgTemp>
+      <avgTemp_F>53.4</avgTemp_F>
+      <maxWindSpeed_kmph>17.2</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>10.7</maxWindSpeed_mph>
+      <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>4.8</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>15.3</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>9.5</avgWindSpeed_mph>
+      <avgWindSpeed_knots>8.0</avgWindSpeed_knots>
+      <avgWindSpeed_ms>4.3</avgWindSpeed_ms>
+      <avgWindGust_kmph>23.8</avgWindGust_kmph>
+      <avgWindGust_mph>14.8</avgWindGust_mph>
       <avgWindGust_knots>12.0</avgWindGust_knots>
-      <avgWindGust_ms>6.3</avgWindGust_ms>
-      <avgDailyRainfall>1.20</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.05</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>37.32</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>1.47</avgMonthlyRainfall_inch>
-      <avgHumidity>80.98992</avgHumidity>
-      <avgCloud>56.082016</avgCloud>
+      <avgWindGust_ms>6.6</avgWindGust_ms>
+      <avgDailyRainfall>1.41</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.06</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>43.70</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.72</avgMonthlyRainfall_inch>
+      <avgHumidity>83.69113</avgHumidity>
+      <avgCloud>55.080055</avgCloud>
       <avgVis_km>8.7</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1014.6</avgPressure_mb>
+      <avgPressure_mb>1014.8</avgPressure_mb>
       <avgPressure_inch>30.4</avgPressure_inch>
-      <avgDryDays>16</avgDryDays>
-      <avgRainDays>12</avgRainDays>
+      <avgDryDays>14</avgDryDays>
+      <avgRainDays>14</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>7</avgFogDays>
-      <avgThunderDays>1</avgThunderDays>
+      <avgFogDays>6</avgFogDays>
+      <avgThunderDays>0</avgThunderDays>
       <avgUVIndex>3</avgUVIndex>
-      <avgSunHour>135.6</avgSunHour>
+      <avgSunHour>137.3</avgSunHour>
     </month>
     <month>
       <index>11</index>
       <name>November</name>
-      <avgMinTemp>5.9</avgMinTemp>
-      <avgMinTemp_F>42.5</avgMinTemp_F>
-      <avgMaxTemp>10.5</avgMaxTemp>
-      <avgMaxTemp_F>50.9</avgMaxTemp_F>
-      <absMinTemp>3.1</absMinTemp>
-      <absMinTemp_F>37.7</absMinTemp_F>
+      <avgMinTemp>6.0</avgMinTemp>
+      <avgMinTemp_F>42.8</avgMinTemp_F>
+      <avgMaxTemp>10.6</avgMaxTemp>
+      <avgMaxTemp_F>51.0</avgMaxTemp_F>
+      <absMinTemp>3.8</absMinTemp>
+      <absMinTemp_F>38.9</absMinTemp_F>
       <absMaxTemp>12.8</absMaxTemp>
-      <absMaxTemp_F>55.0</absMaxTemp_F>
-      <avgTemp>8.2</avgTemp>
-      <avgTemp_F>46.7</avgTemp_F>
-      <maxWindSpeed_kmph>16.9</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>10.5</maxWindSpeed_mph>
+      <absMaxTemp_F>55.1</absMaxTemp_F>
+      <avgTemp>8.3</avgTemp>
+      <avgTemp_F>47.0</avgTemp_F>
+      <maxWindSpeed_kmph>18.5</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>11.5</maxWindSpeed_mph>
       <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>4.7</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>15.5</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>9.6</avgWindSpeed_mph>
+      <maxWindSpeed_ms>5.1</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>16.7</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>10.4</avgWindSpeed_mph>
       <avgWindSpeed_knots>8.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.3</avgWindSpeed_ms>
-      <avgWindGust_kmph>25.0</avgWindGust_kmph>
-      <avgWindGust_mph>15.5</avgWindGust_mph>
-      <avgWindGust_knots>13.0</avgWindGust_knots>
-      <avgWindGust_ms>6.9</avgWindGust_ms>
-      <avgDailyRainfall>0.80</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>23.96</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.94</avgMonthlyRainfall_inch>
-      <avgHumidity>85.254684</avgHumidity>
-      <avgCloud>60.176132</avgCloud>
+      <avgWindSpeed_ms>4.6</avgWindSpeed_ms>
+      <avgWindGust_kmph>26.7</avgWindGust_kmph>
+      <avgWindGust_mph>16.6</avgWindGust_mph>
+      <avgWindGust_knots>14.0</avgWindGust_knots>
+      <avgWindGust_ms>7.4</avgWindGust_ms>
+      <avgDailyRainfall>1.20</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.05</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>36.06</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.42</avgMonthlyRainfall_inch>
+      <avgHumidity>87.06914</avgHumidity>
+      <avgCloud>60.439274</avgCloud>
       <avgVis_km>8.6</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1011.3</avgPressure_mb>
+      <avgPressure_mb>1011.6</avgPressure_mb>
       <avgPressure_inch>30.3</avgPressure_inch>
-      <avgDryDays>16</avgDryDays>
-      <avgRainDays>12</avgRainDays>
+      <avgDryDays>13</avgDryDays>
+      <avgRainDays>15</avgRainDays>
       <avgSnowDays>0</avgSnowDays>
-      <avgFogDays>7</avgFogDays>
-      <avgThunderDays>1</avgThunderDays>
+      <avgFogDays>5</avgFogDays>
+      <avgThunderDays>2</avgThunderDays>
       <avgUVIndex>2</avgUVIndex>
-      <avgSunHour>117.8</avgSunHour>
+      <avgSunHour>116.5</avgSunHour>
     </month>
     <month>
       <index>12</index>
       <name>December</name>
-      <avgMinTemp>3.4</avgMinTemp>
-      <avgMinTemp_F>38.1</avgMinTemp_F>
-      <avgMaxTemp>7.6</avgMaxTemp>
-      <avgMaxTemp_F>45.7</avgMaxTemp_F>
-      <absMinTemp>-2.5</absMinTemp>
-      <absMinTemp_F>27.4</absMinTemp_F>
-      <absMaxTemp>11.5</absMaxTemp>
-      <absMaxTemp_F>52.7</absMaxTemp_F>
-      <avgTemp>5.5</avgTemp>
-      <avgTemp_F>41.9</avgTemp_F>
-      <maxWindSpeed_kmph>18.0</maxWindSpeed_kmph>
-      <maxWindSpeed_mph>11.2</maxWindSpeed_mph>
-      <maxWindSpeed_knots>9.0</maxWindSpeed_knots>
-      <maxWindSpeed_ms>5.0</maxWindSpeed_ms>
-      <avgWindSpeed_kmph>17.0</avgWindSpeed_kmph>
-      <avgWindSpeed_mph>10.6</avgWindSpeed_mph>
+      <avgMinTemp>3.7</avgMinTemp>
+      <avgMinTemp_F>38.7</avgMinTemp_F>
+      <avgMaxTemp>8.0</avgMaxTemp>
+      <avgMaxTemp_F>46.4</avgMaxTemp_F>
+      <absMinTemp>-1.6</absMinTemp>
+      <absMinTemp_F>29.1</absMinTemp_F>
+      <absMaxTemp>11.4</absMaxTemp>
+      <absMaxTemp_F>52.6</absMaxTemp_F>
+      <avgTemp>5.9</avgTemp>
+      <avgTemp_F>42.6</avgTemp_F>
+      <maxWindSpeed_kmph>19.1</maxWindSpeed_kmph>
+      <maxWindSpeed_mph>11.9</maxWindSpeed_mph>
+      <maxWindSpeed_knots>10.0</maxWindSpeed_knots>
+      <maxWindSpeed_ms>5.3</maxWindSpeed_ms>
+      <avgWindSpeed_kmph>17.9</avgWindSpeed_kmph>
+      <avgWindSpeed_mph>11.1</avgWindSpeed_mph>
       <avgWindSpeed_knots>9.0</avgWindSpeed_knots>
-      <avgWindSpeed_ms>4.7</avgWindSpeed_ms>
-      <avgWindGust_kmph>28.6</avgWindGust_kmph>
-      <avgWindGust_mph>17.8</avgWindGust_mph>
+      <avgWindSpeed_ms>5.0</avgWindSpeed_ms>
+      <avgWindGust_kmph>29.3</avgWindGust_kmph>
+      <avgWindGust_mph>18.2</avgWindGust_mph>
       <avgWindGust_knots>15.0</avgWindGust_knots>
-      <avgWindGust_ms>8.0</avgWindGust_ms>
-      <avgDailyRainfall>0.77</avgDailyRainfall>
-      <avgDailyRainfall_inch>0.03</avgDailyRainfall_inch>
-      <avgMonthlyRainfall>23.72</avgMonthlyRainfall>
-      <avgMonthlyRainfall_inch>0.93</avgMonthlyRainfall_inch>
-      <avgHumidity>88.50976</avgHumidity>
-      <avgCloud>59.04446</avgCloud>
+      <avgWindGust_ms>8.1</avgWindGust_ms>
+      <avgDailyRainfall>1.13</avgDailyRainfall>
+      <avgDailyRainfall_inch>0.04</avgDailyRainfall_inch>
+      <avgMonthlyRainfall>35.08</avgMonthlyRainfall>
+      <avgMonthlyRainfall_inch>1.38</avgMonthlyRainfall_inch>
+      <avgHumidity>88.77677</avgHumidity>
+      <avgCloud>59.664223</avgCloud>
       <avgVis_km>8.6</avgVis_km>
       <avgVis_miles>5.0</avgVis_miles>
-      <avgPressure_mb>1014.5</avgPressure_mb>
+      <avgPressure_mb>1015.0</avgPressure_mb>
       <avgPressure_inch>30.4</avgPressure_inch>
-      <avgDryDays>17</avgDryDays>
-      <avgRainDays>11</avgRainDays>
+      <avgDryDays>15</avgDryDays>
+      <avgRainDays>14</avgRainDays>
       <avgSnowDays>2</avgSnowDays>
-      <avgFogDays>6</avgFogDays>
+      <avgFogDays>5</avgFogDays>
       <avgThunderDays>1</avgThunderDays>
       <avgUVIndex>2</avgUVIndex>
-      <avgSunHour>123.9</avgSunHour>
+      <avgSunHour>123.8</avgSunHour>
     </month>
   </ClimateAverages>
 </data>
