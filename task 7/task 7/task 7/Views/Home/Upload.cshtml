@@ -11,7 +11,7 @@
         <div id="tags"></div>
         <div id="receiptCheck"></div>
         <div id="receiptAmount"></div>
-        <input type="file" name="file" id="file" value="dataFile" required="" accept=".jpg,.jpeg,.png" onchange="displayImage()">
+        <input type="file" name="file" id="file" value="dataFile" required="" accept=".png,.jpg,.jpeg" onchange="displayImage(); validateUpload();">
         <button onclick="uploadFile()">Upload to Clarifai</button>
         <button onclick="tagImage()">Tag Image</button>
         <button onclick="checkReceipt()">Check Image is Receipt</button>
@@ -25,15 +25,35 @@
     var app = new Clarifai.App({
         apiKey: ''
     });
+    function validateUpload() {
+        var file = document.getElementById('file').files[0];
+        if (file == null) {
+            alert('No Image uploaded. Please upload an image.');
+            return false;
+        } else {
+            var fileName = file.name;
+            var allowed_extensions = new Array("jpg", "png", ".jpeg");
+            var file_extension = fileName.split('.').pop().toLowerCase();
+
+            for (var i = 0; i < allowed_extensions.length; i++) {
+                if (allowed_extensions[i] == file_extension) {
+                    return true;
+                }
+            }
+            $("#file").val('');
+            alert('invalid file extension. Please choose a valid extension.');
+            return false;
+        }
+    }
     function displayImage() {
         var file = document.getElementById('file').files[0];
         var reader = new FileReader();
         $('#tags').html('');
         $('#receiptCheck').html('');
         $('#receiptAmount').html('');
-         reader.onload = function () {
-             var image = document.getElementById('selectedImage');
-             image.src = reader.result;
+        reader.onload = function () {
+            var image = document.getElementById('selectedImage');
+            image.src = reader.result;
         }
         if (file) {
             reader.readAsDataURL(file);
@@ -61,7 +81,7 @@
                 });
         }
 
-        if (file) {
+        if (validateUpload()) {
             reader.readAsDataURL(file);
         }
     }
@@ -88,17 +108,17 @@
                         } else {
                             $('#tags').append(concept.name + ", ");
                         }
-                    
+
 
                     })
-                    
+
 
                 });
 
-    
+
         }
 
-        if (file) {
+        if (validateUpload()) {
             reader.readAsDataURL(file);
         }
     }
@@ -125,7 +145,7 @@
                 })
         }
 
-        if (file) {
+        if (validateUpload()) {
             reader.readAsDataURL(file);
         }
     }
@@ -152,7 +172,7 @@
 
             })
         }
-         if (file) {
+        if (validateUpload()) {
             reader.readAsDataURL(file);
         }
     }
