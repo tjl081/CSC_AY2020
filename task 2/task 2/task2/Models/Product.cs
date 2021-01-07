@@ -15,7 +15,7 @@ namespace WebAPI2.Models
         public string Category { get; set; }
         [Required]
         [Range(0,100)]
-        [RegularExpression(@"\d+(\.\d{1,2})?", ErrorMessage = "Price must have 2 decimal place or less!")]
+        [RegularExpression(@"\d+(\.\d{1,2})?", ErrorMessage = "Price must not be negative and should be 2 decimal place or less!")]
         public decimal Price { get; set; }
     }
 }
