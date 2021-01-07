@@ -15,14 +15,13 @@ namespace CSC_AY2020
         {
             XmlDocument wsResponseXmlDoc = new XmlDocument();
 
-            //http://api.worldweatheronline.com/premium/v1/weather.ashx?key=1a4d0ea614b244e78dc65205202810&q=London&format=xml&num_of_days=5
-            //id=jipx(spacetime0)
+            
             UriBuilder url = new UriBuilder();
             url.Scheme = "http";// Same as "http://"
 
             url.Host = "api.worldweatheronline.com";
             url.Path = "premium/v1/weather.ashx";// change to v2
-            url.Query = "key=102915d3fa844bcf8f652919210101&q=London&format=xml&num_of_days=5";
+            url.Query = "key=&q=London&format=xml&num_of_days=5";
 
             //Make a HTTP request to the global weather web service
             wsResponseXmlDoc = MakeRequest(url.ToString());
