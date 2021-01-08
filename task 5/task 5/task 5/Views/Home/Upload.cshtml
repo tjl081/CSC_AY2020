@@ -52,10 +52,15 @@
                 transform: rotate(360deg);
             }
         }
+
+        .alert {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div>
+        <div class="alert alert-danger" role="alert">Network error! Attempting API call retry in 5 seconds!</div>
         <input type="file" name="file" id="file" value="dataFile" required="" accept=".jpg,.jpeg,.png" onchange="validateUpload();">
         <div id="longUrl">long url:</div>
         <div id="shortUrl">shorten url:</div>
@@ -86,7 +91,7 @@
     var s3BucketName = 'talentphotosbucket';
     var longUrl = '';
     var shortUrl = '';
-    var bitlyToken = ''
+    var bitlyToken = '';
 
     function validateUpload() {
         var file = document.getElementById('file').files[0];
@@ -128,33 +133,45 @@
                         console.log(this);
                         longUrl = this.request.httpRequest.stream.responseURL;
                         $('#longUrl').html("long url:<a href='" + longUrl + "'>" + longUrl + "</a>");
-                        $.ajax({
-                            url: "https://api-ssl.bitly.com/v4/shorten",
-                            cache: false,
-                            dataType: "json",
-                            method: "POST",
-                            contentType: "application/json",
-                            beforeSend: function (xhr) {
-                                xhr.setRequestHeader("Authorization", "Bearer " + bitlyToken);
-                            },
-                            data: JSON.stringify({ "long_url": longUrl })
-                        }).done(function (data) {
-                            console.log(data);
-                            shortUrl = data.link;
-                            $('#shortUrl').html("shorten url:<a href='" + shortUrl + "'>" + shortUrl + "</a>");
-
-                        })
-                        hideSpinner();
+                        shortenUrl();
 
                     }
                     else {
                         hideSpinner();
-                        alert("Upload failed!");
-
-
+                        showAlert();
+                        setTimeout(function () {
+                            uploadFile();
+                            hideAlert();
+                        }, 5000);
                     }
                 });
         }
+    }
+
+    function shortenUrl() {
+        $.ajax({
+            url: "https://api-ssl.bitly.com/v4/shorten",
+            cache: false,
+            dataType: "json",
+            method: "POST",
+            contentType: "application/json",
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("Authorization", "Bearer " + bitlyToken);
+            },
+            data: JSON.stringify({ "long_url": longUrl })
+        }).done(function (data) {
+            console.log(data);
+            shortUrl = data.link;
+            $('#shortUrl').html("shorten url:<a href='" + shortUrl + "'>" + shortUrl + "</a>");
+            hideSpinner();
+        }).fail(function () {
+            hideSpinner();
+            showAlert();
+            setTimeout(function () {
+                shortenUrl();
+                hideAlert();
+            }, 5000);
+        })
     }
 
     function listObjs() {
@@ -176,14 +193,30 @@
                 jQuery("#objKeys").html(html_keys);
                 jQuery("#objImgs").html(html_imgs);
                 hideSpinner();
-            } else { console.log(error); hideSpinner(); }
-        });
+            } else {
+                console.log(error);
+                hideSpinner();
+                showAlert();
+                setTimeout(function () {
+                    listObjs();
+                    hideAlert();
+                }, 5000);
+            }
+        },
+
+        );
     }
     function hideSpinner() {
         $('.loader').hide();
     }
     function showSpinner() {
         $('.loader').show();
+    }
+    function showAlert() {
+        $('.alert').show();
+    }
+    function hideAlert() {
+        $('.alert').hide();
     }
 
 </script>
