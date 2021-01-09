@@ -15,10 +15,10 @@ namespace CSC_AY2020_Task6_new.Database
 
 
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "csc-ay2020.database.windows.net";
-            builder.UserID = "csc_db_admin";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "csc_db";
+            builder.DataSource = "";
+            builder.UserID = "";
+            builder.Password = "";
+            builder.InitialCatalog = "";
             conn = new SqlConnection(builder.ConnectionString);
 
             if (IsSQLOnline() != true)
